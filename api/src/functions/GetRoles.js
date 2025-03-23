@@ -11,7 +11,10 @@ app.http('GetRoles', {
         const user = request.body || {};
         const roles = ["ttt","xxx"];
  
-        return json(roles);
+        return {
+            status: 200,
+            jsonBody: { roles }
+        };
 
     }
 });
