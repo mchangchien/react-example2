@@ -11,7 +11,7 @@ app.http('GetRoles', {
         const user = request.body || {};
         const roles = ["ttt","xxx"];
  
-        return {roles };
+        return json(roles);
 
     }
 });
