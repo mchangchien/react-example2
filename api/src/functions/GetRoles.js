@@ -11,12 +11,7 @@ app.http('GetRoles', {
         const user = request.body || {};
         const roles = ["ttt","xxx"];
  
-        return {
-            status: 200,
-            headers: { 'Content-Type': 'application/json' },
-            body: { roles }
-        };
-        
+        return {roles };
 
     }
 });
